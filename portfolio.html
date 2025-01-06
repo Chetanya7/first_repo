@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="The portfolio of a filmmaker and an artist">
         <title>Gawx's Portfolio</title>
+        <link rel="stylesheet" href="portfolio.css">
     </head>
 
     <body>
-        <header>
-            <h1><em><strong>Gawx</strong> - Artist & Filmmaker</em></h1>
-            <nav>
+        <header class="main-heading">
+            <nav class="nav main-nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -19,22 +19,23 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <h1 class="title"><em>Gawx - Artist & Filmmaker</em></h1>
         </header>
 
         <main>
-            <section id="home">
+            <section id="home" class="content-section container">
                 <article>
-                    <h2><em>Welcome to my world,see everything from my <abbr title="Point of View">POV</abbr></em></h2>
-                    <p>Explore the unique blend of art and film. Creativity redifined!</p>
+                    <h2><em>Welcome to my world, see everything from my <abbr title="Point of View">POV</abbr></em></h2>
+                    <p>Explore the unique blend of art and film. Creativity redefined!</p>
                 </article>
             </section>
 
-            <section id="about">
+            <section id="about" class="content-section container">
                 <header>
                     <h2><em>About Gawx</em></h2>  
                 </header>
 
-                <p>Gawx is an innovative <em><strong>artist</strong></em> and <em><strong>filmmaker</strong></em> whose work captures the essence of storytelling through visuals. Known for his unique style and amazing techniques, he continues to inspire people worldwide. His YouTube channel has over 2 million subscribers.</p>
+                <p>Gawx is an innovative <span class="highlighted"><em><strong>artist</strong></em> and <em><strong>filmmaker</strong></em></span> whose work captures the essence of storytelling through visuals. Known for his unique style and amazing techniques, he continues to inspire people worldwide. His YouTube channel has over 2 million subscribers.</p>
                 <p>Here's what Wikitubia has to say about me:</p>
                 <blockquote cite="https://youtube.fandom.com/wiki/Gawx_Art">
                     <p>
@@ -49,26 +50,27 @@
                 </details>
             </section>
 
-            <section id="gallery">
+            <section id="gallery" class="content-section container">
                 <header>
                     <h2><em>Gallery</em></h2>
                 </header>
+                <div class="image-container">
                 <figure>
                     <img src="Images/artwork1.jpg" alt="STICKERBOMB PRINT">
                     <figcaption>STICKERBOMB Print (Yup, that's me in the picture)</figcaption>
                 </figure>
                 <figure>
-                    <img src="Images/artwork2.jpg" alt="Stylish girl with frog earrings">
+                    <img src="Images/artwork2.jpg" alt="Stylish girl with frog earrings" >
                     <figcaption>Stylish girl with frog earrings</figcaption>
                 </figure>
+                </div>
             </section>
 
-            <section id="videos">
+            <section id="videos" class="content-section container">
                 <header>
                     <h2><em>Videos (Films as I like to call them)</em></h2>
                 </header>
-
-                <h3><em>THE CREATIVE PROCESS, a film by Gawx</em></h3>
+                <div class="video-container">
                 <iframe 
                     width="560" 
                     height="315" 
@@ -79,11 +81,22 @@
                     referrerpolicy="strict-origin-when-cross-origin" 
                     allowfullscreen>
                 </iframe>
-            </section>
-                
+
+                <iframe 
+                    width="560"
+                    height="315" 
+                    src="https://www.youtube.com/embed/fDLLv5aTO3k?si=Xj7Q06MfpP-GNKhB" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
             </section>
 
-            <section id="contact">
+            <section id="contact" class="content-section container">
                 <header>
                     <h2>Contact</h2>
                 </header>
@@ -102,7 +115,7 @@
             </section>
         </main>
 
-        <footer>
+        <footer class="content-section container">
         <address>
             <p>Email: <a href="mailto:management@gawxworld.com">management@gawxworld.com</a></p>
         </address>

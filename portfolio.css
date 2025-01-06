@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+@font-face{
+    font-family: "Booter-Zero-Zero";
+    src: url(Fonts/Booter-Zero-Zero.woff) format("woff"),
+         url(Fonts/Booter-Zero-Zero.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul{
+   margin: 0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.main-nav li{
+    padding: 0 5%;
+}
+
+.title{
+    text-align: center;
+    margin: 0;
+    font-size: 9em;
+    font-family: "Booter-Zero-Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.main-heading{
+    background-image: url(Images/Header\ Background.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+}
+
+.content-section{
+    margin: 1em;
+}
+
+.container{
+    margin: 0 auto;
+    width: 900px;
+    padding: 0 1.5em;
+}
+
+.video-container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
